@@ -29,10 +29,6 @@ book_flight(){
            menu
    fi
 
-    flight=$(zenity --list --width 550 --height 300 --title "AKASA AIRLINES" --text "SELECT FLIGHT" \
-	    -- column "DEPARTURE TIME" column "ARRIVAL TIME" \ 
-	    column "FLY TIME" column "PRICE" "${view_flight[@]}")
-
 	 date_notfound=true
 
         for date in "${dates[@]}"; do
